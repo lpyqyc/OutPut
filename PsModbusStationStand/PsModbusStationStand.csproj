@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>PsModbusStationStand</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>Preview</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <PackageReference Include="IoTClient" Version="1.0.41" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.IO.Ports" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PsMachineBaseInfStand\PsMachineBaseInfStand.csproj" />
+    <ProjectReference Include="..\PsMachineBaseStand\PsMachineBaseStand.csproj" />
+    <ProjectReference Include="..\PsMachineToolsStand\PsMachineToolsStand.csproj" />
+  </ItemGroup>
+</Project>
